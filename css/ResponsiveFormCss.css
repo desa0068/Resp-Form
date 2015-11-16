@@ -1,0 +1,217 @@
+@-moz-viewport { width: device-width; scale: 1;}
+@-ms-viewport { width: device-width; scale: 1;}
+@-o-viewport {width: device-width; scale: 1;}
+@-webkit-viewport { width: device-width; scale: 1;}
+@viewport { width: device-width; scale:1;}
+
+html
+{
+    box-sizing: border-box;
+    -moz-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+   
+   
+}
+
+ .title
+    {
+        background-color:#087F6F;
+        color:white;
+        position:absolute;
+        width:100%;;
+        text-align: center;
+        font-family: 'Slabo 27px', serif;
+    }
+
+.sendbtn
+{
+    background-color:#0CCCB1;  
+}
+.wrapper
+{
+    background-color:#0CCCB1;    
+    padding-top:200px;
+    margin:0;
+    height: 100%;
+    width:100%;
+    
+   
+}
+
+@media screen and (max-width:400px){
+    
+    #txtusername, #email, #txtwebsite, #pass
+    {
+        width:300px;   
+        margin-left:30px;
+    }
+    #btnsend
+    {
+        width:100px; 
+        margin-left:30px;
+        border-radius:0px;  
+       -webkit-border-radius: 0px;      
+       -moz-border-radius: 0px;     
+    }
+    
+    #pass
+    {
+        margin-bottom:20px;
+    }
+
+    .info1, .info3, .info5, .info7
+    {
+        visibility: hidden;
+    }
+
+}
+
+@media (min-width:410px) and (max-width:700px)
+    {
+
+        .wrapper
+        {
+            -moz-column-width: 150px;
+            -webkit-column-width: 150px;
+            column-width: 150px;
+            column-fill: auto;
+            height: 100px;
+            
+           
+        }
+        
+        .info1
+        {
+            -moz-column-width: 80px;
+            -webkit-column-width: 80px;
+            column-width: 80px;
+/*            column-fill: auto;*/
+            padding-left:5px;
+            margin-left:10px;
+            
+        }
+        .info3, .info1
+        {
+            padding-top:5px;
+            padding-left:5px;
+            margin-left:10px;
+        }
+        
+        .info2
+        {
+            padding-left:5px;
+            margin-left:10px;
+        }
+        .info5, .info7
+        {
+           padding-top:5px; 
+           margin-left:10px;
+        }
+         .info4 
+        {
+            -moz-column-width: 80px;
+            -webkit-column-width: 80px;
+            column-width: 80px;
+            column-fill: auto;
+            height:30px;
+            display:inline-block;
+            padding-bottom:5px;
+            padding-left:5px;
+            margin-left:10px;
+        }
+              
+    }
+
+@media (min-width:701px) and (max-width:864px)
+    {
+         .wrapper
+        {
+            -moz-column-width: 200px;
+            -webkit-column-width: 200px;
+            column-width: 200px;
+            column-fill: auto;
+            height: 100px;
+            
+        }
+        
+        .info1, .info3
+        {
+            padding-top:10px;
+            display:inline-block;
+            -moz-column-width: 150px;
+            -webkit-column-width: 150px;
+            column-width: 150px;
+            column-fill: auto;
+            padding-left:5px;
+            
+        }
+        
+        .info2, .info4
+        {
+            padding-left:5px;
+        }
+         
+    
+        .info5, .info7
+        {
+             padding-top:10px;
+            display:inline-block;
+            -moz-column-width: 150px;
+            -webkit-column-width: 150px;
+            column-width: 150px;
+            padding-left:5px;
+        }
+    }
+
+@media (min-width:864px) and (max-width:1900px)
+    {
+        .wrapper
+        {
+            -moz-column-width: 400px;
+            -webkit-column-width: 400px;
+            column-width: 400px;
+            column-fill: auto;
+            height: 80px;
+        }
+        
+        .info1, .info2
+        {
+            padding-top:10px;
+            display:inline-block;
+            -moz-column-width: 200px;
+            -webkit-column-width: 200px;
+            column-width: 200px;
+/*            column-fill: auto;*/
+           
+        }
+         .info3, .info4 
+        {
+            padding-top:10px;
+            display:inline-block;
+            -moz-column-width: 200px;
+            -webkit-column-width: 200px;
+            column-width: 200px;
+            column-fill: auto;
+/*            height: 60px;*/
+            
+/*
+            -moz-column-width: 100px;
+            -webkit-column-width: 100px;
+            column-width: 100px;
+            column-fill: auto;
+            height:20px;
+            
+*/
+        }
+        
+        .info5, .info6, .info7, .info8
+        {
+             padding-top:10px;
+            display:inline-block;
+            -moz-column-width: 200px;
+            -webkit-column-width: 200px;
+            column-width: 200px;
+        }        
+    }
